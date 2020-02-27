@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
-#what is question we want to answer, lets try to predict all stars this year with logistic regression using fg data
-#should write files and other functions if possible
+#scrape basketball reference and clean datasets, use 2018-19 as train data to predict current all-stars.
 df = pd.read_html("https://www.basketball-reference.com/leagues/NBA_2020_totals.html#totals_stats::fg")
 df_past1 = pd.read_html("https://www.basketball-reference.com/leagues/NBA_2019_totals.html")
 df_past2 = pd.read_html("https://www.basketball-reference.com/leagues/NBA_2018_totals.html")
